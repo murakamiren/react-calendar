@@ -13,7 +13,7 @@ const CalendarBody: FC = () => {
 				<tr>
 					{weeks.map((_, j) => {
 						if (i === 0 && j < startDay) {
-							return <TdItem itemContent={lastMonthEndDate - startDay + j + 2} style={{ color: "gray" }} />;
+							return <TdItem itemContent={lastMonthEndDate - startDay + j + 1} style={{ color: "gray" }} />;
 						}
 
 						if (count > endDate - 1) {

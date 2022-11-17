@@ -8,6 +8,6 @@ export const date = nowDate.date();
 
 export const startDay = nowDate.startOf("month").day();
 export const endDate = nowDate.endOf("month").date();
-export const lastMonthEndDate = nowDate.add(-1).endOf("month").date();
+export const lastMonthEndDate = nowDate.add(-1, "M").endOf("month").date();
 
 export const calendarRow = Math.ceil((startDay + endDate) / weeks.length);
