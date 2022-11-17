@@ -5,9 +5,11 @@ import ThItem from "../thItem/thItem";
 const CalendarHead: FC = () => {
 	return (
 		<thead>
-			{weeks.map((week) => (
-				<ThItem itemContent={week} />
-			))}
+			<tr>
+				{weeks.map((week) => (
+					<ThItem itemContent={week} />
+				))}
+			</tr>
 		</thead>
 	);
 };
