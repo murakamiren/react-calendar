@@ -1,14 +1,14 @@
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import { tdItemStyle } from "./tdItem.css";
 
 type Props = {
 	itemContent: string | number;
-	isCurrentMonth?: boolean;
+	style?: CSSProperties;
 };
 
-const TdItem: FC<Props> = ({ itemContent, isCurrentMonth = true }) => {
+const TdItem: FC<Props> = ({ itemContent, style }) => {
 	return (
-		<td className={tdItemStyle.td} style={{ color: isCurrentMonth ? "#fff" : "gray" }}>
+		<td className={tdItemStyle.td} style={style}>
 			{itemContent}
 		</td>
 	);
